@@ -1,0 +1,12 @@
+{
+	"oneroster": "OneRoster",
+	"missing.bearer.token": "Jeton d'accès manquant.",
+	"insufficient.scope": "Le jeton ne donne pas accès à ce service.",
+	"no.user.to.import": "Aucun utilisateur de cet établissement dans l'archive.",
+	"several.schools.choose.orgSourcedId": "L'archive contient plusieurs établissements : précisez lequel importer.",
+	"no.school.in.source": "L'archive ne contient aucun établissement.",
+	"org.not.found.in.source": "Cet établissement est absent de l'archive.",
+	"csv.users.missing": "L'archive ne contient pas de fichier users.csv.",
+	"csv.invalid.zip": "Le fichier n'est pas une archive ZIP OneRoster valide.",
+	"remote.provider.not.allowed": "Ce fournisseur OneRoster n'est pas autorisé dans la configuration."
+}

@@ -1,0 +1,18 @@
+{
+	"main" : "fr.openent.oneroster.OneRoster",
+	"port" : 8171,
+	"app-name" : "OneRoster",
+	"app-address" : "/oneroster",
+	"app-icon" : "oneroster-large",
+	"app-type" : "SYSTEM",
+	"mode": "dev",
+	"integration-mode" : "HTTP",
+	"app-registry.port" : 8012,
+	"entcore.port" : 8090,
+	"sql" : true,
+	"mongodb" : false,
+	"db-schema" : "oneroster",
+	"oneroster" : {
+		"issuer" : "http://localhost:8090"
+	}
+}

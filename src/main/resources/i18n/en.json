@@ -1,0 +1,12 @@
+{
+	"oneroster": "OneRoster",
+	"missing.bearer.token": "Missing access token.",
+	"insufficient.scope": "The token does not grant access to this service.",
+	"no.user.to.import": "The archive contains no user for this school.",
+	"several.schools.choose.orgSourcedId": "The archive contains several schools: choose the one to import.",
+	"no.school.in.source": "The archive contains no school.",
+	"org.not.found.in.source": "This school is not in the archive.",
+	"csv.users.missing": "The archive has no users.csv file.",
+	"csv.invalid.zip": "The file is not a valid OneRoster ZIP archive.",
+	"remote.provider.not.allowed": "This OneRoster provider is not allowed by the configuration."
+}

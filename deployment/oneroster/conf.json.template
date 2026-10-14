@@ -1,0 +1,32 @@
+    {
+      "name": "fr.openent~oneroster~${oneRosterVersion}",
+      "config": {
+        "main" : "fr.openent.oneroster.OneRoster",
+        "port" : 8171,
+        "app-name" : "OneRoster",
+        "app-address" : "/oneroster",
+        "app-type" : "SYSTEM",
+        "host": "${host}",
+        "ssl" : $ssl,
+        "auto-redeploy": false,
+        "userbook-host": "${host}",
+        "integration-mode" : "HTTP",
+        "app-registry.port" : 8012,
+        "mode" : "${mode}",
+        "entcore.port" : 8009,
+        "sql" : true,
+        "mongodb" : false,
+        "db-schema" : "oneroster",
+        "oneroster" : {
+          "issuer" : "${host}",
+          "private-key" : "${oneRosterPrivateKeyPem}",
+          "kid" : "${oneRosterKid}",
+          "access-token-ttl-seconds" : 3600,
+          "cache-seconds" : 120,
+          "max-limit" : 10000,
+          "import" : {
+            "remote-providers" : []
+          }
+        }
+      }
+    }
