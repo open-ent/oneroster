@@ -94,7 +94,7 @@ public class ImportService {
 	}
 
 	private Future<JsonObject> structure(String structureId) {
-		return Db.neo4j("MATCH (s:Structure {id: {id}}) RETURN s.id AS id, s.name AS name, " +
+		return Db.neo4j("MATCH (s:Structure {id: $id}) RETURN s.id AS id, s.name AS name, " +
 				"s.externalId AS externalId, s.UAI AS uai", new JsonObject().put("id", structureId))
 				.compose(rows -> rows.isEmpty() ? Future.failedFuture(new OneRosterException(404, "structure.not.found"))
 						: Future.succeededFuture(rows.getJsonObject(0)));
